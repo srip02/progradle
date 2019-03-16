@@ -5,10 +5,15 @@ package progradleTest;
 
 public class App {
     public String getGreeting() {
-        return "Hello this is my first release.";
+        return "Hello sum of 2 numbers";
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public int addNumber(int a, int b){
+       return a+b;
+    }
+
+    public static void main(String[] args){
+        App a = new App();
+        System.out.println(a.getGreeting() + a.addNumber(2,3));
     }
 }
